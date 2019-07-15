@@ -1,0 +1,56 @@
+Salamence-Mega @ Salamencite  
+Ability: Aerilate  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+- Dragon Dance  
+- Double-Edge  
+- Defog  
+- Roost  
+
+Kyogre-Primal @ Blue Orb  
+Ability: Primordial Sea  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Calm Mind  
+- Origin Pulse  
+- Ice Beam  
+- Water Spout  
+
+Xerneas @ Power Herb  
+Ability: Fairy Aura  
+EVs: 172 Def / 252 SpA / 84 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Geomancy  
+- Moonblast  
+- Focus Blast  
+- Thunder  
+
+Arceus @ Chople Berry  
+Ability: Multitype  
+EVs: 240 HP / 252 Atk / 16 Spe  
+Adamant Nature  
+- Swords Dance  
+- Extreme Speed  
+- Shadow Claw  
+- Recover  
+
+Groudon-Primal @ Red Orb  
+Ability: Desolate Land  
+EVs: 244 Atk / 88 SpD / 176 Spe  
+Adamant Nature  
+- Rock Polish  
+- Swords Dance  
+- Precipice Blades  
+- Stone Edge  
+
+Necrozma-Dusk-Mane @ Ultranecrozium Z  
+Ability: Prism Armor  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Stealth Rock  
+- Photon Geyser  
+- Heat Wave  
+- Power Gem  

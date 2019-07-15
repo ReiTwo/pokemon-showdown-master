@@ -1,0 +1,55 @@
+Mawile-Mega (F) @ Mawilite  
+Ability: Intimidate  
+EVs: 160 HP / 252 Atk / 96 Spe  
+Adamant Nature  
+- Swords Dance  
+- Sucker Punch  
+- Play Rough  
+- Thunder Punch  
+
+Rotom-Wash @ Wiki Berry  
+Ability: Levitate  
+EVs: 252 HP / 4 Def / 252 SpD  
+Calm Nature  
+IVs: 0 Atk / 24 Spe  
+- Hydro Pump  
+- Volt Switch  
+- Thunder Wave  
+- Defog  
+
+Heatran (M) @ Leftovers  
+Ability: Flash Fire  
+EVs: 216 HP / 248 SpD / 44 Spe  
+Calm Nature  
+IVs: 0 Atk  
+- Stealth Rock  
+- Magma Storm  
+- Earth Power  
+- Taunt  
+
+Landorus-Therian @ Choice Scarf  
+Ability: Intimidate  
+EVs: 8 HP / 204 Atk / 76 SpA / 220 Spe  
+Naive Nature  
+- Earthquake  
+- Hidden Power [Ice]  
+- Earth Power  
+- U-turn  
+
+Tapu Bulu @ Choice Band  
+Ability: Grassy Surge  
+EVs: 196 HP / 216 Atk / 96 Spe  
+Adamant Nature  
+- Wood Hammer  
+- Horn Leech  
+- Superpower  
+- Megahorn  
+
+Kartana @ Normalium Z  
+Ability: Beast Boost  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Swords Dance  
+- Leaf Blade  
+- Sacred Sword  
+- Giga Impact  

@@ -1,0 +1,55 @@
+Gengar-Mega @ Gengarite  
+Ability: Shadow Tag  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 1 Atk  
+- Shadow Ball  
+- Sludge Wave  
+- Hidden Power [Ice]  
+- Thunder  
+
+Groudon-Primal @ Red Orb  
+Ability: Desolate Land  
+EVs: 144 HP / 156 Atk / 56 SpD / 152 Spe  
+Adamant Nature  
+- Stealth Rock  
+- Precipice Blades  
+- Rock Tomb  
+- Swords Dance  
+
+Arceus-Water @ Splash Plate  
+Ability: Multitype  
+EVs: 248 HP / 172 Def / 88 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Judgment  
+- Ice Beam  
+- Recover  
+- Toxic  
+
+Yveltal @ Choice Scarf  
+Ability: Dark Aura  
+EVs: 248 HP / 36 SpA / 224 Spe  
+Timid Nature  
+- Foul Play  
+- Oblivion Wing  
+- U-turn  
+- Defog  
+
+Zygarde-Complete @ Dragonium Z  
+Ability: Power Construct  
+EVs: 228 Atk / 48 SpD / 232 Spe  
+Adamant Nature  
+- Dragon Dance  
+- Outrage  
+- Thousand Arrows  
+- Glare  
+
+Necrozma-Dusk-Mane @ Weakness Policy  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Brave Nature  
+- Swords Dance  
+- Sunsteel Strike  
+- Earthquake  
+- Trick Room  

@@ -1,0 +1,55 @@
+Tornadus @ Flyinium Z  
+Ability: Prankster  
+EVs: 172 HP / 84 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Tailwind  
+- Defog  
+- Hurricane  
+- Heat Wave  
+
+Whimsicott @ Leftovers  
+Ability: Prankster  
+EVs: 252 HP / 48 Def / 208 Spe  
+Timid Nature  
+- Tailwind  
+- Moonblast  
+- Encore  
+- U-turn  
+
+Infernape @ Choice Band  
+Ability: Iron Fist  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Mach Punch  
+- Close Combat  
+- Flare Blitz  
+- U-turn  
+
+Aerodactyl @ Focus Sash  
+Ability: Unnerve  
+EVs: 252 Atk / 4 Def / 252 Spe  
+Jolly Nature  
+- Stealth Rock  
+- Tailwind  
+- Double-Edge  
+- Taunt  
+
+Blastoise-Mega @ Blastoisinite  
+Ability: Torrent  
+EVs: 64 HP / 252 SpA / 192 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Hydro Pump  
+- Dark Pulse  
+- Aura Sphere  
+- Mirror Coat  
+
+Mamoswine @ Life Orb  
+Ability: Thick Fat  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Icicle Crash  
+- Earthquake  
+- Ice Shard  
+- Stone Edge  

@@ -1,0 +1,53 @@
+Smeargle (F) @ Focus Sash  
+Ability: Own Tempo  
+EVs: 252 HP / 4 Def / 252 Spe  
+Timid Nature  
+- Sticky Web  
+- Glare  
+- Taunt  
+- Whirlwind  
+
+Groudon-Primal @ Red Orb  
+Ability: Desolate Land  
+EVs: 68 Atk / 252 SpA / 188 Spe  
+Mild Nature  
+- Eruption  
+- Precipice Blades  
+- Rock Tomb  
+- Swords Dance  
+
+Arceus-Ground @ Earth Plate  
+Ability: Multitype  
+EVs: 252 Atk / 4 Def / 252 Spe  
+Jolly Nature  
+- Swords Dance  
+- Earthquake  
+- Stone Edge  
+- Recover  
+
+Yveltal @ Life Orb  
+Ability: Dark Aura  
+EVs: 4 Atk / 252 SpA / 252 Spe  
+Hasty Nature  
+- Dark Pulse  
+- Oblivion Wing  
+- Sucker Punch  
+- Taunt  
+
+Diancie-Mega @ Diancite  
+Ability: Clear Body  
+EVs: 4 Atk / 252 SpA / 252 Spe  
+Hasty Nature  
+- Stealth Rock  
+- Moonblast  
+- Diamond Storm  
+- Explosion  
+
+Necrozma-Dusk-Mane @ Ultranecrozium Z  
+Ability: Prism Armor  
+EVs: 224 Atk / 32 Def / 252 Spe  
+Jolly Nature  
+- Swords Dance  
+- Photon Geyser  
+- Sunsteel Strike  
+- Earthquake  
