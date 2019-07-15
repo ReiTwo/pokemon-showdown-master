@@ -1,7 +1,7 @@
 # Feature function
 
 ## **x**(*s*): vector of features visible when in state *s*
-This binary representation is constructed by first assigning indices, from 1 to *k*, to all states. Then, the binary encoding of the state index is used as a feature vector to represent that state. The length of a feature vector is determined by the total number of states.
+This binary representation is constructed by first assigning indices, from 0 to *k-1*, to all states. Then, the binary encoding of the state index is used as a feature vector to represent that state. The length of a feature vector is determined by the total number of states.
 
 **My active pokemon**
 
