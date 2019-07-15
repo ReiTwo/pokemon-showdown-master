@@ -103,6 +103,6 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-# pokemon showdown omega
+# pokemon showdown master
 pso/states/*
 !pso/states/README.md
