@@ -1,0 +1,56 @@
+Kyogre-Primal @ Blue Orb  
+Ability: Primordial Sea  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Water Spout  
+- Origin Pulse  
+- Ice Beam  
+- Calm Mind  
+
+Groudon-Primal @ Red Orb  
+Ability: Desolate Land  
+EVs: 4 Atk / 252 SpA / 252 Spe  
+Hasty Nature  
+- Stone Edge  
+- Eruption  
+- Solar Beam  
+- Precipice Blades  
+
+Arceus-Fairy @ Pixie Plate  
+Ability: Multitype  
+EVs: 248 HP / 160 Def / 100 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Judgment  
+- Earth Power  
+- Stealth Rock  
+- Recover  
+
+Yveltal @ Charti Berry  
+Ability: Dark Aura  
+EVs: 248 HP / 8 Def / 252 Spe  
+Jolly Nature  
+IVs: 0 Atk  
+- Foul Play  
+- Toxic  
+- Roost  
+- Taunt  
+
+Salamence-Mega @ Salamencite  
+Ability: Intimidate  
+EVs: 248 HP / 136 Def / 124 Spe  
+Impish Nature  
+- Body Slam  
+- Defog  
+- Roost  
+- Refresh  
+
+Necrozma-Dusk-Mane @ Solganium Z  
+Ability: Prism Armor  
+EVs: 248 HP / 16 Def / 220 SpD / 24 Spe  
+Careful Nature  
+- Swords Dance  
+- Sunsteel Strike  
+- Earthquake  
+- Morning Sun  

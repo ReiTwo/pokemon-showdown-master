@@ -1,0 +1,54 @@
+Mawile-Mega @ Mawilite  
+Ability: Intimidate  
+EVs: 180 HP / 232 Atk / 96 Spe  
+Adamant Nature  
+- Swords Dance  
+- Play Rough  
+- Knock Off  
+- Sucker Punch  
+
+Garchomp @ Rockium Z  
+Ability: Rough Skin  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Swords Dance  
+- Earthquake  
+- Stone Edge  
+- Stealth Rock  
+
+Heatran @ Leftovers  
+Ability: Flash Fire  
+EVs: 252 HP / 208 SpD / 48 Spe  
+Calm Nature  
+IVs: 0 Atk  
+- Magma Storm  
+- Earth Power  
+- Toxic  
+- Protect  
+
+Tornadus-Therian @ Rocky Helmet  
+Ability: Regenerator  
+EVs: 248 HP / 8 Def / 252 Spe  
+Timid Nature  
+- Hurricane  
+- Knock Off  
+- Taunt  
+- Defog  
+
+Greninja-Ash @ Choice Specs  
+Ability: Battle Bond  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+- Dark Pulse  
+- Hydro Pump  
+- Water Shuriken  
+- Spikes  
+
+Tapu Bulu @ Leftovers  
+Ability: Grassy Surge  
+EVs: 248 HP / 204 SpD / 56 Spe  
+Careful Nature  
+- Swords Dance  
+- Horn Leech  
+- Superpower  
+- Protect  

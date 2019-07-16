@@ -1,0 +1,55 @@
+Lopunny-Mega (F) @ Lopunnite  
+Ability: Limber  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Fake Out  
+- High Jump Kick  
+- Return  
+- Quick Attack  
+
+Gastrodon-East (M) @ Leftovers  
+Ability: Storm Drain  
+EVs: 252 HP / 4 Def / 252 SpD  
+Sassy Nature  
+- Scald  
+- Earthquake  
+- Recover  
+- Clear Smog  
+
+Heatran (M) @ Firium Z  
+Ability: Flash Fire  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Magma Storm  
+- Earth Power  
+- Toxic  
+- Protect  
+
+Tornadus-Therian @ Rocky Helmet  
+Ability: Regenerator  
+EVs: 240 HP / 64 Def / 204 Spe  
+Timid Nature  
+- Heat Wave  
+- Knock Off  
+- Defog  
+- U-turn  
+
+Clefable (F) @ Leftovers  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Def / 4 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Stealth Rock  
+- Soft-Boiled  
+- Moonblast  
+- Wish  
+
+Celesteela @ Leftovers  
+Ability: Beast Boost  
+EVs: 248 HP / 8 Def / 252 SpD  
+Sassy Nature  
+- Heavy Slam  
+- Leech Seed  
+- Protect  
+- Flamethrower  

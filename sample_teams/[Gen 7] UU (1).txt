@@ -1,0 +1,58 @@
+Venusaur @ Poisonium Z  
+Ability: Chlorophyll  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Giga Drain  
+- Hidden Power [Fire]  
+- Sludge Bomb  
+- Growth  
+
+Rotom-Heat @ Heat Rock  
+Ability: Levitate  
+EVs: 248 HP / 172 Def / 88 Spe  
+Bold Nature  
+IVs: 0 Atk  
+- Volt Switch  
+- Overheat  
+- Pain Split  
+- Sunny Day  
+
+Alomomola @ Eject Button  
+Ability: Regenerator  
+EVs: 120 HP / 252 Def / 136 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Scald  
+- Healing Wish  
+- Wish  
+- Protect  
+
+Whimsicott @ Life Orb  
+Ability: Chlorophyll  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Energy Ball  
+- Moonblast  
+- Psychic  
+- Growth  
+
+Diancie @ Heat Rock  
+Ability: Clear Body  
+EVs: 252 HP / 4 Def / 252 SpD  
+Calm Nature  
+IVs: 0 Atk  
+- Moonblast  
+- Power Gem  
+- Stealth Rock  
+- Sunny Day  
+
+Houndoom-Mega @ Houndoominite  
+Ability: Solar Power  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+- Fire Blast  
+- Dark Pulse  
+- Flame Charge  
+- Nasty Plot  
