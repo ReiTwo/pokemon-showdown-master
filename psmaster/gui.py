@@ -129,7 +129,7 @@ class BattleWindow(tk.Frame):
         self.url = "https://play.pokemonshowdown.com/"
 
         self.parent.title("Pokemon Showdown Master")
-        self.formats = ["gen7ou", "gen7ubers", "gen7uu"]
+        self.formats = ["gen7ou", "gen7ubers", "gen7uu", "gen7oublitz"]
         self.rounds = [1, 2, 3, 4, 5, 10, 15, 20, 25, 50, 75, 100, 125, 250, 375, 500]
 
         self.battle_type = tk.IntVar()
