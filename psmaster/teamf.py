@@ -1,6 +1,5 @@
 # Team Converter
 
-
 def team_converter(team_lst):
     result = ""
 
