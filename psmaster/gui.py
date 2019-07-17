@@ -1,8 +1,7 @@
+import random
 import tkinter as tk
 import webbrowser
 from tkinter import filedialog
-
-import numpy as np
 
 import cfg
 import teamf
@@ -45,7 +44,7 @@ class LoginWindow(tk.Frame):
             self.information[2] = self.password_entry.get()
 
             if self.avatar_index.get() == 0:
-                self.information[3] = np.random.randint(1, 294)
+                self.information[3] = random.randint(1, 293)
             else:
                 self.information[3] = self.avatar_index.get()
 
@@ -131,7 +130,7 @@ class BattleWindow(tk.Frame):
 
         self.parent.title("Pokemon Showdown Omega")
         self.formats = ["gen7ou", "gen7ubers", "gen7uu"]
-        self.rounds = list(range(1, 51))
+        self.rounds = [1, 2, 3, 4, 5, 10, 15, 20, 25, 50, 75, 100, 125, 250, 375, 500, 625]
 
         self.battle_type = tk.IntVar()
         self.battle_type.set(0)
