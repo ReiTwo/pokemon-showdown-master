@@ -14,7 +14,5 @@ battle_to_main = queue.Queue(1)
 
 # Global Variables (load and save files)
 pokedex = None
-states = None
-sapairs = None
 actions_js = None
-actions_np = None
+weights_np = None
