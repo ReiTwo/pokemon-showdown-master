@@ -74,10 +74,10 @@ def on_message(ws, message):
 
                         return
 
-        if ("|win|" in message) or ("|tie" in message):
+        if "|win|" in message:
             for entry in message_lst:
-                if ("|win|" in entry) or ("|tie" in entry):
-                    if ("|win|" == entry[:5]) or ("|tie" == entry[:4]):
+                if "|win|" in entry:
+                    if "|win|" == entry[:5]:
                         cfg.battle_message_queue.put(message_lst)
 
                         time.sleep(1)
