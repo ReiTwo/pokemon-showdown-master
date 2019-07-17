@@ -64,9 +64,9 @@ def on_message(ws, message):
                         with open(actions_js_path_abs, "w", encoding="utf-8") as output:
                             json.dump(cfg.actions_js, output, ensure_ascii=False)
 
-                        actions_np_path = "states/" + _actions_info["hash"] + ".npy"
-                        actions_np_path_abs = os.path.join(_script_dir, actions_np_path)
-                        np.save(actions_np_path_abs, cfg.actions_np)
+                        weights_np_path = "states/" + _actions_info["hash"] + ".npy"
+                        weights_np_path_abs = os.path.join(_script_dir, weights_np_path)
+                        np.save(weights_np_path_abs, cfg.weights_np)
                         temp_item = _q.get()
 
                         cfg.game_state = {"room_id": "lobby", "timer": "off"}
@@ -142,10 +142,15 @@ def on_open(ws):
         global _login_flag
         global _q
 
-        global _action_info
+        global _actions_info
         global _server_login_info
 
         global _script_dir
+
+        pokedex_path = "data/pokedex.json"
+        pokedex_path_abs = os.path.join(_script_dir, pokedex_path)
+        with open(pokedex_path_abs) as data:
+            cfg.pokedex = json.load(data)
 
         while not _login_flag:
 
@@ -200,7 +205,7 @@ def on_open(ws):
             if _actions_info["hash"] != hash_team:
                 _q.put("item")
                 cfg.actions_js = None
-                cfg.actions_np = None
+                cfg.weights_np = None
                 _actions_info["hash"] = hash_team
                 _actions_info["loaded"] = False
                 temp_item = _q.get()
@@ -239,12 +244,12 @@ def on_open(ws):
                         with open(actions_js_path_abs) as data:
                             cfg.actions_js = json.load(data)
 
-                        actions_np_path = "states/" + _actions_info["hash"] + ".npy"
-                        actions_np_path_abs = os.path.join(_script_dir, actions_np_path)
-                        cfg.actions_np = np.load(actions_np_path_abs)
+                        weights_np_path = "states/" + _actions_info["hash"] + ".npy"
+                        weights_np_path_abs = os.path.join(_script_dir, weights_np_path)
+                        cfg.weights_np = np.load(weights_np_path_abs)
                     except Exception:
-                        cfg.actions_js = {"win": 0, "lose": 0}
-                        cfg.actions_np = np.zeros((668953, 55), dtype=np.int32)
+                        cfg.actions_js = {"total": 0, "win": 0}
+                        cfg.weights_np = np.zeros(1000)
 
                     temp_item = _q.get()
 
@@ -254,7 +259,6 @@ def on_open(ws):
                     time.sleep(10)
 
                 cfg.main_to_battle.put("End")
-                continue
             else:
                 battle_rounds = battle_lst[3] - 1
 
@@ -289,12 +293,12 @@ def on_open(ws):
                         with open(actions_js_path_abs) as data:
                             cfg.actions_js = json.load(data)
 
-                        actions_np_path = "states/" + _actions_info["hash"] + ".npy"
-                        actions_np_path_abs = os.path.join(_script_dir, actions_np_path)
-                        cfg.actions_np = np.load(actions_np_path_abs)
+                        weights_np_path = "states/" + _actions_info["hash"] + ".npy"
+                        weights_np_path_abs = os.path.join(_script_dir, weights_np_path)
+                        cfg.weights_np = np.load(weights_np_path_abs)
                     except Exception:
-                        cfg.actions_js = {"win": 0, "lose": 0}
-                        cfg.actions_np = np.zeros((668953, 55), dtype=np.int32)
+                        cfg.actions_js = {"total": 0, "win": 0}
+                        cfg.weights_np = np.zeros(1000)
 
                     temp_item = _q.get()
 
@@ -313,7 +317,6 @@ def on_open(ws):
                         time.sleep(10)
 
                 cfg.main_to_battle.put("End")
-                continue
 
         time.sleep(1)
         ws.close()
@@ -352,22 +355,6 @@ def on_open(ws):
     def run_ai(*args):
         global _login_flag
 
-        global _script_dir
-
-        pokedex_path = "data/pokedex.json"
-        pokedex_path_abs = os.path.join(_script_dir, pokedex_path)
-        with open(pokedex_path_abs) as data:
-            cfg.pokedex = json.load(data)
-
-        states_path = "data/states.npy"
-        states_path_abs = os.path.join(_script_dir, states_path)
-        cfg.states = np.load(states_path_abs)
-
-        sapairs_path = "data/sapairs.json"
-        sapairs_path_abs = os.path.join(_script_dir, sapairs_path)
-        with open(sapairs_path_abs) as data:
-            cfg.sapairs = json.load(data)
-
         while not _login_flag:
             time.sleep(5)
 
@@ -381,15 +368,16 @@ def on_open(ws):
             if not valid_choice[0]:
                 continue
 
-            time.sleep(3)
+            time.sleep(1)
 
-            # Temporary - battle_message_queue
             while not cfg.battle_message_queue.empty():
                 new_msg = cfg.battle_message_queue.get()
 
-            # Temporary
             result = np.random.choice(valid_choice[0])
             ws.send(cfg.game_state["room_id"] + "|/" + result + valid_choice[1])
+
+        time.sleep(1)
+        ws.close()
 
     _thread.start_new_thread(run, ())
     _thread.start_new_thread(run_gui, ())
@@ -399,8 +387,8 @@ def on_open(ws):
 if __name__ == "__main__":
     websocket.enableTrace(True)   # default : True
     ws = websocket.WebSocketApp("ws://sim.smogon.com:8000/showdown/websocket",
-                                on_message = on_message,
-                                on_error = on_error,
-                                on_close = on_close)
+                                on_message=on_message,
+                                on_error=on_error,
+                                on_close=on_close)
     ws.on_open = on_open
     ws.run_forever()

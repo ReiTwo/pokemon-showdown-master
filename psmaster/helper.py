@@ -1,6 +1,9 @@
 import json
 
 
+# The process_request function takes in a request string (contains a JSON object)
+# and outputs a list contains ALL possible choices of that request.
+
 def process_request(req_str):
     req_obj = req_str[len("|request|"):].strip()
     json_obj = json.loads(req_obj)
@@ -46,7 +49,7 @@ def process_request(req_str):
                 zmove_lst = json_obj["active"][0]["canZMove"]
 
                 for i in range(len(zmove_lst)):
-                    if zmove_lst[i] != None:
+                    if zmove_lst[i] is not None:
                         choice[0].append("choose move " + move_choice[i]["id"] + " zmove")
             elif "canUltraBurst" in json_obj["active"][0]:
                 if json_obj["active"][0]["canUltraBurst"]:
