@@ -17,7 +17,7 @@ class LoginWindow(tk.Frame):
         self.flag = False
         self.information = [0, "", "", 0]   # login_type, username, password, avatar_index
 
-        self.parent.title("Pokemon Showdown Omega")
+        self.parent.title("Pokemon Showdown Master")
         self.avatar_lst = list(range(0, 294))
 
         self.avatar_index = tk.IntVar()
@@ -128,9 +128,9 @@ class BattleWindow(tk.Frame):
         self.team = ""
         self.url = "https://play.pokemonshowdown.com/"
 
-        self.parent.title("Pokemon Showdown Omega")
+        self.parent.title("Pokemon Showdown Master")
         self.formats = ["gen7ou", "gen7ubers", "gen7uu"]
-        self.rounds = [1, 2, 3, 4, 5, 10, 15, 20, 25, 50, 75, 100, 125, 250, 375, 500, 625]
+        self.rounds = [1, 2, 3, 4, 5, 10, 15, 20, 25, 50, 75, 100, 125, 250, 375, 500]
 
         self.battle_type = tk.IntVar()
         self.battle_type.set(0)
