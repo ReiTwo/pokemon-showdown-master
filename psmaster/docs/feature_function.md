@@ -1,7 +1,7 @@
 # Feature function
 
 ## **x**(*s*): vector of features visible when in state *s*
-This binary representation is constructed by first assigning indices, from 0 to *k-1*, to all states. Then, the binary encoding of the state index is used as a feature vector to represent that state. The length of a feature vector is determined by the total number of states.
+The binary representation is constructed by first assigning indices, from 0 to *n - 1*, to all states. Then, the binary encoding of the state index is used as a feature vector to represent that state. The length of a feature vector is determined by the total number of states.
 
 **My active pokemon (Main)**
 
@@ -162,6 +162,103 @@ This binary representation is constructed by first assigning indices, from 0 to 
 | *s<sub>147* | Light Screen | 1 | 0 |
 | *s<sub>148* | Aurora Veil | 1 | 0 |
 | *s<sub>149* | Tailwind | 1 | 0 |
+
+**Both sides**
+
+| State | Description | Active | Inactive |
+| :---: | :--- | :---: | :---: |
+| *s<sub>150* | Harsh sunlight | 1 | 0 |
+| *s<sub>151* | Rain | 1 | 0 |
+| *s<sub>152* | Sandstorm | 1 | 0 |
+| *s<sub>153* | Hail | 1 | 0 |
+| *s<sub>154* | Extremely harsh sunlight | 1 | 0 |
+| *s<sub>155* | Heavy rain | 1 | 0 |
+| *s<sub>156* | Electric Terrain | 1 | 0 |
+| *s<sub>157* | Grassy Terrain | 1 | 0 |
+| *s<sub>158* | Misty Terrain | 1 | 0 |
+| *s<sub>159* | Psychic Terrain | 1 | 0 |
+
+**My active pokemon (Status)**
+
+| State | Description | Active | Inactive |
+| :---: | :--- | :---: | :---: |
+| *s<sub>160* | Bound | 1 | 0 |
+| *s<sub>161* | Can't escape | 1 | 0 |
+| *s<sub>162* | Confusion | 1 | 0 |
+| *s<sub>163* | Curse | 1 | 0 |
+| *s<sub>164* | Embargo | 1 | 0 |
+| *s<sub>165* | Encore | 1 | 0 |
+| *s<sub>166* | Heal Block | 1 | 0 |
+| *s<sub>167* | Identified | 1 | 0 |
+| *s<sub>168* | Infatuation | 1 | 0 |
+| *s<sub>169* | Leech Seed | 1 | 0 |
+| *s<sub>170* | Nightmare | 1 | 0 |
+| *s<sub>171* | Perish Song | 1 | 0 |
+| *s<sub>172* | Taunt | 1 | 0 |
+| *s<sub>173* | Telekinesis | 1 | 0 |
+| *s<sub>174* | Torment | 1 | 0 |
+| *s<sub>175* | Aqua Ring | 1 | 0 |
+| *s<sub>176* | Charging turn | 1 | 0 |
+| *s<sub>177* | Defense Curl | 1 | 0 |
+| *s<sub>178* | Rooting | 1 | 0 |
+| *s<sub>179* | Magnetic levitation | 1 | 0 |
+| *s<sub>180* | Recharging | 1 | 0 |
+| *s<sub>181* | Semi-invulnerable | 1 | 0 |
+| *s<sub>182* | Substitute | 1 | 0 |
+| *s<sub>183* | Taking aim | 1 | 0 |
+| *s<sub>184* | Withdrawing | 1 | 0 |
+
+**Opponent's active pokemon (Status)**
+
+| State | Description | Active | Inactive |
+| :---: | :--- | :---: | :---: |
+| *s<sub>185* | Bound | 1 | 0 |
+| *s<sub>186* | Can't escape | 1 | 0 |
+| *s<sub>187* | Confusion | 1 | 0 |
+| *s<sub>188* | Curse | 1 | 0 |
+| *s<sub>189* | Embargo | 1 | 0 |
+| *s<sub>190* | Encore | 1 | 0 |
+| *s<sub>191* | Heal Block | 1 | 0 |
+| *s<sub>192* | Identified | 1 | 0 |
+| *s<sub>193* | Infatuation | 1 | 0 |
+| *s<sub>194* | Leech Seed | 1 | 0 |
+| *s<sub>195* | Nightmare | 1 | 0 |
+| *s<sub>196* | Perish Song | 1 | 0 |
+| *s<sub>197* | Taunt | 1 | 0 |
+| *s<sub>198* | Telekinesis | 1 | 0 |
+| *s<sub>199* | Torment | 1 | 0 |
+| *s<sub>200* | Aqua Ring | 1 | 0 |
+| *s<sub>201* | Charging turn | 1 | 0 |
+| *s<sub>202* | Defense Curl | 1 | 0 |
+| *s<sub>203* | Rooting | 1 | 0 |
+| *s<sub>204* | Magnetic levitation | 1 | 0 |
+| *s<sub>205* | Recharging | 1 | 0 |
+| *s<sub>206* | Semi-invulnerable | 1 | 0 |
+| *s<sub>207* | Substitute | 1 | 0 |
+| *s<sub>208* | Taking aim | 1 | 0 |
+| *s<sub>209* | Withdrawing | 1 | 0 |
+
+**Backups**
+
+| State | Description | Active | Inactive |
+| :---: | :--- | :---: | :---: |
+| *s<sub>210* | backup1 | 1 | 0 |
+| *s<sub>211* | backup2 | 1 | 0 |
+| *s<sub>212* | backup3 | 1 | 0 |
+| *s<sub>213* | backup4 | 1 | 0 |
+| *s<sub>214* | backup5 | 1 | 0 |
+| *s<sub>215* | backup6 | 1 | 0 |
+| *s<sub>216* | backup7 | 1 | 0 |
+| *s<sub>217* | backup8 | 1 | 0 |
+| *s<sub>218* | backup9 | 1 | 0 |
+| *s<sub>219* | backup10 | 1 | 0 |
+| *s<sub>220* | backup11 | 1 | 0 |
+| *s<sub>221* | backup12 | 1 | 0 |
+| *s<sub>222* | backup13 | 1 | 0 |
+| *s<sub>223* | backup14 | 1 | 0 |
+| *s<sub>224* | backup15 | 1 | 0 |
+
+Therefore, *n* = |**x**(*s*)| = 225
 
 ## **x**(*s*, *a*): vector of features visible when in state *s* taking action *a*
 A common way to derive an action-feature vector **x**(*s*, *a*) from a state-feature vector **x**(*s*) involves an action-feature vector of size *n*|*A*|, where *n* is the number of state features and |*A*| is the number of actions. Each action corresponds with a block of *n* features in this action-feature vector. The features in **x**(*s*, *a*) that corresponds to action *a* take on the values of the state features; the features corresponding to other actions have a value of 0.
