@@ -1,5 +1,5 @@
 # Feature function
-There are mainly three representations of the feature function: *tabular*, *binary* and *non-binary*. For Pokemon Showdown, tabular features are infeasible due to an overly large state-action space, so I decided to go with the simple binary representation. On the other hand, I believe that the non-binary representation will achieve a better result, but it is more complicated to implement as compared to the binary representation (lazy . . .).
+There are mainly three representations of the feature function: *tabular*, *binary* and *non-binary*. For Pokemon Showdown, tabular features are infeasible due to an overly large state-action space, so I decided to go with the simple binary representation. On the other hand, I believe that the non-binary representation will achieve a better result, but it is more complicated (lazy . . .) to implement as compared to the binary representation.
 
 ## **x**(*s*): vector of features visible when in state *s*
 The binary representation is constructed by first assigning indices, from 0 to *n - 1*, to all states. Then, the binary encoding of the state index is used as a feature vector to represent that state. The length of a feature vector is determined by the total number of states.
