@@ -49,7 +49,7 @@ def team_converter(team_lst):
             elif "- " == entry[:2]:
                 pokemon_info[4] = pokemon_info[4] + string_format(entry[2:]) + ","
             elif "Nature" in entry:
-                pokemon_info[5] = string_format(entry[:-6])
+                pokemon_info[5] = entry[:-6].strip()
             elif "EVs:" in entry:
                 pokemon_info[6] = ev_iv_calc(entry[4:])
             elif "IVs:" in entry:
