@@ -262,3 +262,9 @@ Therefore, *n* = |**x**(*s*)| = 225
 
 ## **x**(*s*, *a*): vector of features visible when in state *s* taking action *a*
 A common way to derive an action-feature vector **x**(*s*, *a*) from a state-feature vector **x**(*s*) involves an action-feature vector of size *n*|*A*|, where *n* is the number of state features and |*A*| is the number of actions. Each action corresponds with a block of *n* features in this action-feature vector. The features in **x**(*s*, *a*) that corresponds to action *a* take on the values of the state features; the features corresponding to other actions have a value of 0.
+
+In a single state, by taking into account the possibilities of mega, zmove, ultra and switches, the total number of actions available is (4)(2) + 5 = **13**. On the other hand, the maximum action space for a standard team is (4)(6)(2) + 6 =**54**. Therefore, |*A*| = 54.
+
+*n*|*A*| = (225)(54) = 12,150
+
+Therefore, **x** outputs a vector with *d* = 12,150 such that **x**(*terminal*, *action*) = **0**.
