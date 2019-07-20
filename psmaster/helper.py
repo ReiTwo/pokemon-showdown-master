@@ -17,7 +17,15 @@ def process_request(req_str):
             return choice
     elif "teamPreview" in json_obj:
         if json_obj["teamPreview"]:
-            choice[0].append("choose default")
+            if len(json_obj["side"]["pokemon"]) == 6:
+                choice[0].append("choose team 123456")
+                choice[0].append("choose team 213456")
+                choice[0].append("choose team 312456")
+                choice[0].append("choose team 412356")
+                choice[0].append("choose team 512346")
+                choice[0].append("choose team 612345")
+            else:
+                choice[0].append("choose default")
             return choice
     elif "forceSwitch" in json_obj:
         if json_obj["forceSwitch"] == [True]:
@@ -37,7 +45,10 @@ def process_request(req_str):
             move_choice = json_obj["active"][0]["moves"]
 
             for i in range(len(move_choice)):
-                if not move_choice[i]["disabled"]:
+                if "disabled" in move_choice[i]:
+                    if not move_choice[i]["disabled"]:
+                        choice[0].append("choose move " + move_choice[i]["id"])
+                else:
                     choice[0].append("choose move " + move_choice[i]["id"])
 
             if "canMegaEvo" in json_obj["active"][0]:
