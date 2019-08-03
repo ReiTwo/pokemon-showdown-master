@@ -80,6 +80,14 @@ def on_message(ws, message):
                     if "|win|" == entry[:5]:
                         cfg.battle_message_queue.put(message_lst)
 
+                        _q.put("item")
+                        cfg.actions_js["total"] = cfg.actions_js["total"] + 1
+
+                        win_player = "|win|" + _server_login_info[0]
+                        if entry == win_player:
+                            cfg.actions_js["win"] = cfg.actions_js["win"] + 1
+                        temp_item = _q.get()
+
                         time.sleep(1)
                         ws.send(cfg.game_state["room_id"] + "|" + "/leave")
 
@@ -169,7 +177,6 @@ def on_open(ws):
 
                 _login_flag = True
                 cfg.main_to_login.put("Success")
-                break
             else:
                 login_data = {"act": "login",
                               "name": login_lst[1],
@@ -190,7 +197,6 @@ def on_open(ws):
 
                 _login_flag = True
                 cfg.main_to_login.put("Success")
-                break
 
         while _login_flag:
 
@@ -217,11 +223,11 @@ def on_open(ws):
                 ws.send("|/utm {}".format(battle_team))
                 ws.send("|/challenge {}, {}".format(battle_rival, battle_format))
 
-                for i in range(16):
-                    time.sleep(1)
+                for i in range(32):
+                    time.sleep(0.5)
 
                     if cfg.game_state["room_id"] == "lobby":
-                        if i == 15:
+                        if i == 31:
                             _battle_flag = False
                             ws.send("|/cancelchallenge {}".format(battle_rival))
 
@@ -249,7 +255,7 @@ def on_open(ws):
                         cfg.weights_np = np.load(weights_np_path_abs)
                     except Exception:
                         cfg.actions_js = {"total": 0, "win": 0}
-                        cfg.weights_np = np.zeros(1000)
+                        cfg.weights_np = np.zeros(12150)
 
                     temp_item = _q.get()
 
@@ -266,11 +272,11 @@ def on_open(ws):
                 ws.send("|/utm {}".format(battle_team))
                 ws.send("|/search {}".format(battle_format))
 
-                for i in range(16):
-                    time.sleep(1)
+                for i in range(32):
+                    time.sleep(0.5)
 
                     if cfg.game_state["room_id"] == "lobby":
-                        if i == 15:
+                        if i == 31:
                             _battle_flag = False
                             ws.send("|/cancelsearch")
 
@@ -298,7 +304,7 @@ def on_open(ws):
                         cfg.weights_np = np.load(weights_np_path_abs)
                     except Exception:
                         cfg.actions_js = {"total": 0, "win": 0}
-                        cfg.weights_np = np.zeros(1000)
+                        cfg.weights_np = np.zeros(12150)
 
                     temp_item = _q.get()
 
@@ -334,7 +340,9 @@ def on_open(ws):
         login_class.mainloop()
 
         if not _login_flag:
+            time.sleep(1)
             ws.close()
+
             return
 
         root = tk.Tk()
