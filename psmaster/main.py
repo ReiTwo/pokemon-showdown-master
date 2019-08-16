@@ -372,14 +372,15 @@ def on_open(ws):
                 time.sleep(1)
 
             new_req = cfg.request_queue.get()
-            valid_choice = helper.process_request(new_req)
-            if not valid_choice[0]:
-                continue
-
             time.sleep(1)
 
             while not cfg.battle_message_queue.empty():
                 new_msg = cfg.battle_message_queue.get()
+
+            # Random AI (Temporary)
+            valid_choice = helper.process_request(new_req)
+            if not valid_choice[0]:
+                continue
 
             result = np.random.choice(valid_choice[0])
             ws.send(cfg.game_state["room_id"] + "|/" + result + valid_choice[1])
