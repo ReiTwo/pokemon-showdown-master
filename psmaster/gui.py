@@ -87,7 +87,7 @@ class LoginWindow(tk.Frame):
         self.message_label.pack(padx=(100, 100), pady=(10, 0))
         self.message_content.pack()
         self.log_in_button.pack(pady=(10, 0))
-        self.close_button.pack(pady=10)
+        self.close_button.pack(pady=(10, 20))
 
     def login_send(self):
         if not self.flag:
@@ -247,7 +247,7 @@ class BattleWindow(tk.Frame):
         self.message_content.pack()
         self.battle_button.pack(pady=(10, 0))
         self.spectate_button.pack(pady=(10, 0))
-        self.close_button.pack(pady=10)
+        self.close_button.pack(pady=(10, 20))
 
     def set_message(self, m):
         self.message.set(m)
